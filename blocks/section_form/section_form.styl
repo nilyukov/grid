@@ -1,0 +1,24 @@
+.formsection
+  padding 30px 0
+  background-color darkColor
+  input
+    background-color lighten(darkColor, 6%)
+  form
+    grid-gap gutter
+    grid-template-columns repeat(4, 1fr)
+  .button
+    font-size 17px
+    padding 14.5px
+    width 100%
+input,textarea
+  border none
+  padding 15px 20px
+  width 100%
+  font-family Arial, sans-serif
+  font-style italic
+  outline none
+  transition background-color .25s ease
+  &:focus
+    background-color lightColor
+  &:placeholder
+    color lighten(darkColor, 20%)
